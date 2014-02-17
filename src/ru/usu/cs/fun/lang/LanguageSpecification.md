@@ -1,6 +1,6 @@
-	Спецификация языка fun.
+=Спецификация языка fun
     
-    Грамматика:
+==Грамматика
     
     Program ::= Statement* 
     Statement ::= 'let' NAME ':=' Term ';'
