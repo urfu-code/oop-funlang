@@ -1,0 +1,5 @@
+let inf := fun(~x) inf ~x;
+let one := true 1 (inf true);
+
+one;
+//>1

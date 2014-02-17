@@ -1,0 +1,58 @@
+let not := fun(a) (a false true);
+let and := fun(a) fun(b) a (b true false) false;
+let or  := fun(a) fun(b) a true (b true false);
+let xor := fun(a) fun(b) a (b false true) (b true false);
+
+not true;
+//>false
+not;
+//>fun(a) a false true
+not false;
+//>true
+not 1;
+
+and true true;
+//>true
+and false true;
+//>false
+and true false;
+//>false
+and false false;
+//>false
+and true 1;
+and false 1;
+and 1 true;
+and 1 false;
+
+
+or true true;
+//>true
+or false true;
+//>true
+or true false;
+//>true
+or false false;
+//>false
+or true 1;
+//>true
+or false 1;
+or 1 true;
+or 1 false;
+
+xor true true;
+//>false
+xor false true;
+//>true
+xor true false;
+//>true
+xor false false;
+//>false
+xor true 1;
+xor false 1;
+xor 1 true;
+xor 1 false;
+
+and (xor true false) (or (not false) false);
+//>true
+xor (and true false) (or (not (not false)) false);
+//>false
