@@ -184,8 +184,7 @@ Bool может принимать всего два значения true и fa
 let fibb := fun(n)
         (< n 2) 
                 1
-                (+ (fibb (-n 1)) (fibb (- n 2)))
-        );
+                (+ (fibb (-n 1)) (fibb (- n 2)));
 
 let fact := fun(n) 
         ((= n 1) 
